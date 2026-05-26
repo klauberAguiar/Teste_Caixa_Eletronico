@@ -26,12 +26,6 @@ var
   Runner: ITestRunner;
   Results: IRunResults;
 begin
-  // Suprime notificacoes de first-chance exception do depurador do IDE.
-  // Sem isso, cada excecao esperada nos testes (Assert.WillRaise) interrompe
-  // a execucao e exige um clique em "Continue" no Delphi.
-  // Nao tem efeito fora do IDE (DebugHook ja e 0 em executaveis normais).
-  DebugHook := 0;
-
   try
     Runner := TDUnitX.CreateRunner;
     Runner.AddLogger(TDUnitXConsoleLogger.Create(True));
