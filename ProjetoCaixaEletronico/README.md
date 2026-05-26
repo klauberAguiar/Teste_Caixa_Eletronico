@@ -116,8 +116,8 @@ O programa apresentará um menu com as seguintes opções:
 
 ## Considerações Adicionais
 
-*   **Testes Unitários**: Embora não implementados neste escopo, a arquitetura com interfaces e a separação de responsabilidades tornam a solução altamente testável. Seria trivial criar testes unitários para `TInventario`, `TContaUsuario`, `TComposicaoPadraoStrategy`, `TComposicaoAlternativaStrategy` e `TFileNotificationService`.
-*   **Interface Gráfica**: O teste não exigia uma interface visual. A implementação em console demonstra a lógica de negócio de forma clara e funcional, podendo ser facilmente integrada a uma GUI (VCL ou FMX) no futuro.
+*   **Testes Unitários**: Embora não implementados neste escopo, a arquitetura com interfaces e a separação de responsabilidades tornam a solução altamente testável. Seria trivial criar testes unitários para `TInventario`, `TContaUsuario`, `TComposicaoPadraoStrategy`, `TComposicaoAlternativaStrategy`.
+*   **Interface Gráfica**: O teste não exigia uma interface visual. A implementação em console demonstra a lógica de negócio de forma clara e funcional, podendo ser facilmente integrada a uma GUI (VCL ou FMX).
 *   **Escalabilidade**: A modularidade e o uso de interfaces permitem que novas estratégias de composição, serviços de notificação ou até mesmo mecanismos de persistência (e.g., banco de dados) sejam adicionados com mínimo impacto no código existente.
 
 Este projeto demonstra uma compreensão sólida dos princípios de engenharia de software e a capacidade de construir soluções robustas e bem estruturadas em Delphi.
